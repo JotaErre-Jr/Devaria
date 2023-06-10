@@ -1,0 +1,9 @@
+/* Estilos globais do site */
+html{
+    height: 100;
+}
+body{
+    background-color:teal;
+    font-family: sans-serif;
+    margin: 0;
+}

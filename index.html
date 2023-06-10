@@ -2,30 +2,57 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Site de produtos para teste" />
+    <meta name="keywords" content="produto, promoção, loja, coisas que lembra o site"/>
+    <meta name="author" content="Junior Jotaerre"/>
+    <meta http-equiv="Refresh" content="300" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/index.css">
     <title>Olá Mundo!</title>
 </head>
 <body>
     <header>
-        <h1>Web Page</h1>
-        <nav>
+        <a href="index.html" class="link-logo">
+            <img src="public/img/logo-img-01.svg" width="326" height="326" alt="Logo Produto">
+        </a>
+        <nav class="menu">
             <ul>
-                <li> 
-                    <a href="index.html">Home</a>
-                </li>
                 <li> 
                     <a href="produtos.html">Produtos</a> 
                 </li>
                 <li> 
                     <a href="fale_conosco.html">Fale conosco</a>
                 </li>
+                <li>
+                    <a href="mais_vendidos.html">Mais Vendidos</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
+        <h1 class="title">Web Page</h1>
+
+        <section class="cover-container">
+            <figure>
+                <img src="public/img/fundo.jpg" alt="texto alternativo">
+                <figcaption>Foto de fundo.</figcaption>
+            </figure>
+        </section>
         <section>
-            <img src="img/fundo.jpg" width="500" alt="texto alternativo">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h3>Para que os <abbr title="Desenvolvedore">DEVs</abbr> fiquem sabendo, estou apenas ultilizando <abbr title="HyperText Markup Language">HTML</abbr></h3>
+            <blockquote cite="">HTML is the standard markup language for Web pages.
+
+                With HTML you can create your own Website.
+                
+                HTML is easy to learn - You will enjoy it!</blockquote>
         </section>
     </main>
     <footer>
