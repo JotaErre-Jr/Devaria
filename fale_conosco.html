@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/footer.css">
     <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/fale-conosco.css">
     <title>Fale Conosco</title>
 </head>
 <body>
@@ -15,9 +17,6 @@
         </a>
         <nav class="menu">
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
                 <li>
                     <a href="produtos.html">Produtos</a>
                 </li>
@@ -31,28 +30,28 @@
         </nav>
     </header>
     <main>
-        <h1>Fale Conosco</h1>
-        <h1>Preecha os campos abaixo e clicque em enviar</h1>
-        <form action="index.html">
-            <p>
+        <h1 class="title text-center">Fale Conosco</h1>
+        <h2 class="sub-title text-center">Preecha os campos abaixo e clicque em enviar</h2>
+        <form action="index.html" class="contact-form margin-horizontal-20px">
+            <div>
                 <label for="">Nome:</label>
                 <input type="text" name="nome" maxlength="70">
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="">E-mail:</label>
                 <input type="email" name="email" id="">
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="">Comentários</label>
                 <textarea name="Comentarios" id="" cols="50" rows="4"></textarea>
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="">Sexo</label>
-                <input type="radio" name="sexo"/><label for="">Masculino</label>
-                <input type="radio" name="sexo" id=""/><label for="">Feminino</label>
-                <input type="radio" name="sexo" id=""><label for="">Outro</label>
-            </p>
-            <p>
+                <input type="radio" name="sexo"/><span for="">Masculino</span>
+                <input type="radio" name="sexo" id=""/><span for="">Feminino</span>
+                <input type="radio" name="sexo" id=""><span for="">Outro</span>
+            </div>
+            <div>
                 <label for="">Como você conheceu nossos produtos?</label>
                 <select name="conheceu" id="">
                     <option value="" selected>Youtube</option>
@@ -60,20 +59,20 @@
                     <option value="">Google</option>
                     <option value="">Outros</option>
                 </select>
-            </p>
-            <p>
+            </div>
+            <div>
                 <input type="checkbox" name="aceite" id="" value="aceite">
-                <label for="">Aceito receber novidades de Produtos</label>
-            </p>
-            <p>
+                <span for="">Aceito receber novidades de Produtos</span>
+            </div>
+            <div>
                 <input type="submit" value="Enviar" valeu="Enviar">
                 <input type="reset" value="Limpar" valeu="Limpar">
-            </p>
+            </div>
         </form>
     </main>
     <footer>
         <section>
-            <span>exemplo@exemplo.com.br</span> </section></footer><br>
+            <span>exemplo@exemplo.com.br</span> <br>
             <span>Conheça nosso canal do Youtube!</span>
         </section>
     </footer>

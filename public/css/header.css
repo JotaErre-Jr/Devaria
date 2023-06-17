@@ -11,7 +11,7 @@ header nav ul{
 }
 
 /* Usanndo pseudo classes: respeitam o estado ou propriedades especificas de um elemento*/
-/* Aplicando uma marqgem de 15px no elemento em todoos elementos li dentro de nav menos o ultimo filho :not(:last-child)*/
+/* Aplicando uma marqgem de 15px em todos os elementos li dentro de nav menos o ultimo filho :not(:last-child)*/
 header nav ul li:not(:last-child){
     margin-right: 15px;
 }

@@ -1,9 +1,42 @@
 /* Estilos globais do site */
 html{
-    height: 100;
+    height: 100%;
 }
 body{
     background-color:teal;
     font-family: sans-serif;
+    color: #fff;
     margin: 0;
+}
+
+.title{
+    padding: 0 20px;
+    font-size:  1.7em;
+    text-transform: uppercase;
+}
+
+/* Possibilidade de seletores combinando tag com class */
+/* abaixo ele pega todo o h1 que contiver class title */
+
+h1.title{
+    margin: 40px auto 20px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.margin-horizontal-20px{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .width-50pct-desktop{
+        width: 50% !important;
+    }
 }
