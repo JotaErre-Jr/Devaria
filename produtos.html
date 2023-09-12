@@ -9,6 +9,56 @@
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/produtos.css">
     <title>Itens - Nossos Produto</title>
+
+<style>
+    /* Estilos para a lista de produtos */
+    #meusProdutos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Estilos para cada produto */
+    .produto {
+        width: calc(33.33% - 20px); /* 33.33% de largura com espaço para a margem */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        transition: transform 0.3s;
+    }
+
+    /* Estilos para a imagem do produto */
+    .produto img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Estilos para o nome do produto */
+    .produto h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    /* Estilos para a descrição do produto */
+    .produto p {
+        font-size: 14px;
+    }
+
+    /* Estilos para o preço do produto */
+    .produto p.preco {
+        font-weight: bold;
+        color: #ff6600; 
+    }
+    .produto.hovered {
+        transform: scale(1.1); /* Aumenta em 10% */
+    }
+
+</style>
 </head>
 <body>
     <header>
@@ -32,23 +82,10 @@
         </nav>
     </header>
     <main>
-        <h1 class="title text-center">Nossos Produto</h1>
-        <section class="content-container">
-            <div class="text-center">
-                <img class="width-50pct-desktop" src="public/img/produto1.png" alt="Novo Produto">
-            </div>
-            <article>
-                <h2 class="title text-center">New Product</h2>
-                <p class="text-justify width-50pct-desktop">
-                    Mussum Ipsum, cacilds vidis litro abertis. 
-                    Manduma pindureta quium dia nois paga.
-                    Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. 
-                    Aenean sit amet nisi.Delegadis gente finis, bibendum egestas augue 
-                    arcu ut est.Mauris nec dolor in eros commodo tempor. 
-                    Aenean aliquam molestie leo, vitae iaculis nisl.
-                </p>
-            </article>
-        </section>     
+        <h1 class="title text-center">Nossos Produtos</h1>
+        <!-- <section class="content-container"> -->
+            <div id="meusProdutos"></div>
+        <!-- </section>      -->
     </main>
     <footer>
         <section>
@@ -56,5 +93,6 @@
             <span>Conheça nosso canal do Youtube!</span>
         </section>
     </footer>
+    <script src="public/js/produtos.js"></script>
 </body>
 </html>
